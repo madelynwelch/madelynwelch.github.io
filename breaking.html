@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta charset="utf-8">
+  <title>Breaking - Carolina Week</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- CSS STYLESHEETS -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+  <!-- STICKY NAV -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="breaking.html">Breaking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="local.html">Local</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="getinvolved.html">Get Involved</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--MAIN CONTENT-->
+  <div class="maincontent">
+    
+    <h1>BREAKING NEWS</h1>
+    <div class="row">
+      <div class="card breaking" id="hatchel">
+        <div class="card-body">
+          <img src="images/Hatchel.jpg" class="breakingphoto" alt="Photo of Sylvia Hatchel">
+          <h5 class="card-title">Hatchell Resigns</h5>
+          <p class="card-text">UNC announced women’s basketball head coach Sylvia Hatchell’s resignation late Thursday
+            night. It came after the university investigated the program and placed the entire staff on administrative
+            leave. UNC brought in a Charlotte law firm for the investigation and its report confirmed accusations that
+            Hatchell made racially insensitive remarks and forced players to play through injuries.
+
+            Athletic Director Bubba Cunningham released a statement just before midnight Thursday saying the university
+            and Hatchell both concluded it was time for a change. He thanked her for 33 years of leading the program.
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 2 mins ago by Sam Smith</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card breaking mb-3" id="nafar">
+        <div class="card-body">
+          <img src="images/Nafar.jpg" class="breakingphoto" alt="Photo of Tamer Nafar">
+          <h5 class="card-title">Anti-semitic Rapper Comes to Campus</h5>
+          <p class="card-text">Last week, we reported on the controversy surrounding Tamer Nafar, a Palestinian rapper.
+            He performed on UNC’s campus March 22. It was part of a conference sponsored by the Center for Middle East
+            and Islamic Studies. We noted that some audience members found his remarks on stage Anti-Semitic.
+
+            Since then, his performance has gotten more publicity and backlash. Interim Chancellor Kevin Guskiewicz was
+            among those who criticized the performance. In a statement, Guskiewicz said he is “heartbroken and deeply
+            offended that this performance happened.”
+
+            Leaders of UNC Global, who hosted the conference, prohibited recording of the most controversial parts, but
+            an audience member – a New York based conservative activist – secretly recorded it and released the video.
+          </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago by James Bay</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card breaking" id="beto">
+        <div class="card-body">
+          <img src="images/Beto.jpeg" class="breakingphoto" alt="Photo of Beto O'Rourke">
+          <h5 class="card-title">Beto's Visit to UNC</h5>
+          <p class="card-text">2020 presidential candidate Beto O’Rourke visited UNC Monday afternoon to speak to
+            students, after stopping in both Charlotte and Greensboro the same day. The Democrat from Texas is popular
+            with young voters, but is that enough?</p>
+          <p class="card-text"><small class="text-muted">Last updated 15 mins ago by Julia Michaels</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="twittertimeline">
+      <a class="twitter-timeline" data-width="700" data-height="500" href="https://twitter.com/CarolinaWeekUNC?ref_src=twsrc%5Etfw">Tweets by CarolinaWeekUNC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <a href="https://www.facebook.com/CarolinaWeekNews/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/carolinaweekunc?lang=en" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/carolinaweek/" target="_blank" class="fa fa-instagram"></a>
+  </div>
+</div>
+  <!-- NECESSARY <script> LINKS. The three <script> links below add jQuery, popper.js, and Bootstrap 4 JavaScript. These are libraries of scripts that are necessary to make Bootstrap's interactive and animated components work (e.g., dropdown menus, buttons, alerts, carousels, collapsing navbars and content areas, modals, popups, tooltips, etc). These three <script> links MUST appear in THIS ORDER; this is because both popper.js and the Bootstrap scripts rely on jQuery to work, so jQuery must load into your page first. We add these links at the bottom of the <body> element instead of in the <head> element so the scripts won't be loaded into your site until they're needed, which helps with your site's speed and functionality. -->
+
+  <!-- jQuery--this must come first! -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <!-- popper.js--a library of drop-down and pop-up JavaScript scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+
+  <!-- unique Bootstrap 4 JavaScript scripts -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  
+</body>
+
+</html>

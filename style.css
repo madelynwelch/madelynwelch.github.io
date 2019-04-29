@@ -1,0 +1,422 @@
+/*GENERAL STYLING*/
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0098c6;
+}
+
+a:hover {
+    color: #505050;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*NAV BAR*/
+header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+/*LOGO*/
+header img {
+    width: 75px;
+    float: left;
+    padding: .5%;
+}
+
+header img:hover {
+    opacity: .5;
+}
+
+/*HERO IMAGE*/
+.hero {
+    background-image: url("images/well.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    widows: inherit;
+    text-align: center;
+    height: 80%;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    color: #0098c6;
+    text-transform: uppercase;
+    font-size: 4vw;
+    padding: 185px 0;
+    text-shadow: 2px 2px black;
+    background-color: rgba(255, 255, 255, .40);
+}
+
+.breakingphoto {
+    width: 30vw;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+/* GRID INDEX */
+.item1 {
+    grid-area: main;
+}
+
+.item2 {
+    grid-area: right;
+}
+
+.item3 {
+    grid-area: bottom;
+}
+
+.item4 {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'main main main main right right'
+        'bottom bottom bottom bottom bottom bottom'
+        'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: #FFF;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-container>div {
+    padding: 10px 0;
+}
+
+/*HOME PAGE CONTENT*/
+
+
+
+.item1 h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.item3 h2 {
+    margin-top: 2%;
+}
+
+
+.index-content,
+.getinvolved-content {
+    font-family: 'Montserrat', sans-serif;
+    color: #505050;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    line-height: 175%;
+}
+
+.item2 {
+    margin-right: 15%;
+}
+
+.item2 h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.item3 {
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h5 {
+    color: #0098c6;
+}
+
+.card .index .card-text a {
+    font-weight: 1000;
+    font-size: 20px;
+
+}
+
+.index .card {
+    width: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+/*FOOTER*/
+.footer {
+    width: 100%;
+    background-color: #707070;
+    color: #0098c6;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 5vw;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #0098c6;
+    color: white;
+    width: 55px;
+    height: 55px;
+}
+
+.fa-twitter {
+    background: #0098c6;
+    color: white;
+    width: 55px;
+    height: 55px;
+}
+
+.fa-instagram {
+    background: #0098c6;
+    color: white;
+    width: 55px;
+    height: 55px;
+}
+
+@media only screen and (max-width: 900px) {
+    .item2 {
+        display: none;
+    }
+
+    .index p {
+        display: none;
+    }
+
+    .index a {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .index .card-group {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+
+/*GET INVOLVED PAGE TITLE BAR*/
+.involvedhero {
+    background-image: url(images/group.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    widows: inherit;
+    text-align: center;
+    height: 80%;
+    z-index: -1;
+}
+
+.involvedhero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    color: #0098c6;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-shadow: 3px 3px black;
+}
+
+.involvedhero h2 {
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
+    padding-bottom: 2%;
+
+}
+
+/*GET INVOLVED PAGE MAIN TEXT*/
+.involvedcontent {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.involvedcontent p {
+    margin: 0;
+}
+
+
+/*SUB PAGES GENERAL STYLING*/
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0098c6;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0098c6;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 150%;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.maincontent {
+    padding-top: 100px;
+}
+
+form {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+
+}
+
+.form input {
+    margin: 10px;
+}
+
+
+.bg-light {
+    background-color: #0098c6 !important;
+}
+
+.card {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+
+form .btn-primary {
+    background-color: #0098c6;
+    border-color: #0098c6;
+
+}
+
+.local .card {
+    margin: 20px;
+}
+
+
+.local {
+    margin: 20px;
+}
+
+
+.local p {
+    font-size: 1em;
+}
+
+iframe {
+    height: 35vh;
+}
+
+
+/* BOOTSTRAP PAGES LAYOUT*/
+
+.container-fluid {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#twittertimeline.row {
+    width: 50vw;
+}
+
+
+/*MOBILE RESPONSIVITY*/
+@media screen and (max-width: 900px) {
+    .columnstory {
+        column-count: 2;
+    }
+
+    @media screen and (max-width: 630px) {
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        header img {
+            width: 100px;
+        }
+    }
+
+    #menu-icon {
+        display: inline-block;
+        text-align: center;
+        margin: 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 929px) {
+    .local {
+        flex-direction: column;
+        margin: 30px;
+        margin: 0 auto;
+    }
+
+    .local .card {
+        margin: 0 auto;
+        width: 50vw;
+        margin-bottom: 10px;
+
+    }
+}
